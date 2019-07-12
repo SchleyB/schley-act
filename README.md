@@ -7,5 +7,7 @@ though hopefully it shows off the basic concepts of React in a straight-forward 
 To Run:
 
 npm i
+
 npm start
+
 visit http://localhost:8080/ in browser

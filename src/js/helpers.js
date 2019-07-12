@@ -33,3 +33,18 @@ export const diffComps = (current, next) => {
 
   diff(current, next);
 };
+
+export const getLocalStorage = () => {
+  if (window.localStorage) {
+    const data = window.localStorage.getItem("schleyact");
+    return data && JSON.parse(data);
+  }
+
+  return null;
+};
+
+export const setLocalStorage = obj => {
+  if (window.localStorage) {
+    window.localStorage.setItem("schleyact", JSON.stringify(obj));
+  }
+}

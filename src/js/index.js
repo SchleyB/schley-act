@@ -1,11 +1,12 @@
 import * as Core from './core.js';
+import { getLocalStorage } from './helpers.js';
 
 class Main extends Core.Component {
   constructor() {
     super();
-    this.state = {
+    this.state = getLocalStorage() || {
       todos: []
-    }
+    };
 
     this.handleButtonClick = this.handleButtonClick.bind(this);
   }

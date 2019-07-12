@@ -1,4 +1,4 @@
-import { diffComps } from './helpers.js';
+import { diffComps, setLocalStorage } from './helpers.js';
 
 export class Component {
   constructor() {
@@ -8,6 +8,7 @@ export class Component {
   setState(obj) {
     const currentDOM = this.render();
     this.state = Object.assign({}, this.state, obj);
+    setLocalStorage(this.state);
     const nextDOM = this.render();
     this.updateComponent(currentDOM, nextDOM);
   }

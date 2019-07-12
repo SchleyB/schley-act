@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #222;
+}
+
+.main-form-wrapper {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 42px;
+    border-radius: 10px;
+    margin-top: 182px;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    margin-left: 10px;
+    background: blue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 126px;
+    cursor: pointer;
+}
+
+.input {
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    height: 21px;
+    width: 100%;
+    padding-left: 14px;
+}
+
+.todos-list-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 21px;
+}
+
+.remove-item {
+    margin-left: 7px;
+    background: #ccc;
+    padding: 2px 5px;
+    border-radius: 21px;
+    font-size: 9px;
+    top: -2px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
